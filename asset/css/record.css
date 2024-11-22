@@ -1,0 +1,117 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.record-info {
+  max-width: 800px;
+  margin: 50px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#text-record-header {
+  text-align: center;
+  color: #333;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 15px;
+}
+
+#tabel-record {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#tabel-record td {
+  padding: 15px;
+  border-bottom: 1px solid #333;
+}
+
+.btn-other {
+  text-align: right;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+.greenblock {
+  background-color: #28a745;
+  color: #28a745;
+  padding: 20px;
+}
+
+.add-data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.btn-add-data {
+  color: black;
+  border: 2px solid green;
+  padding: 10px 30px;
+  border-radius: 20px;
+}
+
+.form-other {
+height: 0px;
+}
+
+.form-other h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.row-other {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.field-other {
+  flex: 1;
+  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+.field-other {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+.header-icons {
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.fixtextlabel-other {
+  padding-top: 8px;
+  color: #797979;
+}
+
+.blockbg {
+  background-color: #e6e6e6;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+}
