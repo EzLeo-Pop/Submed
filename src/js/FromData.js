@@ -1,51 +1,35 @@
-let userData = []
+const saveUserData = () => {
+  const userData = JSON.parse(sessionStorage.getItem("userData")) || [];
 
-let addDataToArray = ()=> {
-    const username = document.getElementById('Username').value
-    const surname = document.getElementById('Surname').value
-    const weight = document.getElementById('weight').value
-    const heigh = document.getElementById('heigh').value
-    const date = document.getElementById('date').value
-    const hospital = document.getElementById('hospital').value
-    const department = document.getElementById('department').value
-    const doctor = document.getElementById('doctor').value
-    const idDoctor = document.getElementById('id-doctor').value
-    const vital = document.getElementById('vital-signs').value
-    const doc_results = document.getElementById('doc-results').value
-    const cure = document.getElementById('cure').value
+  const newPatient = {
+    Username: document.getElementById("Username").value.trim(),
+    Surname: document.getElementById("Surname").value.trim(),
+    birthdate: document.getElementById("birthdate").value.trim(),
+    weight: document.getElementById("weight").value.trim(),
+    height: document.getElementById("height").value.trim(),
+    date: document.getElementById("date").value.trim(),
+    hospital: document.getElementById("hospital").value.trim(),
+    department: document.getElementById("department").value.trim(),
+    doctor: document.getElementById("doctor").value.trim(),
+    idDoctor: document.getElementById("id-doctor").value.trim(),
+    vitalSigns: document.getElementById("vital-signs").value.trim(),
+    docResults: document.getElementById("doc-results").value.trim(),
+    cure: document.getElementById("cure").value.trim(),
+  };
 
-    const newdata = {
-        Username : username ,
-        surname : surname ,
-        weight : weight , 
-        heigh : heigh , 
-        date : date , 
-        hospital : hospital ,
-        department : department , 
-        doctor : doctor ,
-        id_Doctor : idDoctor ,
-        vital : vital , 
-        doc_results : doc_results ,
-        cure : cure
-    } 
+  // เพิ่มข้อมูลใหม่
+  userData.push(newPatient);
 
-    userData.push(newdata)
+  // บันทึกข้อมูลใน sessionStorage
+  sessionStorage.setItem("userData", JSON.stringify(userData));
 
-    sessionStorage.setItem("userData" , JSON.stringify(userData))
+  // แสดงข้อความยืนยันและรีเซ็ตฟอร์ม
+  alert("บันทึกข้อมูลเรียบร้อยแล้ว!");
+  document.getElementById("user-form").reset();
+};
 
-    let alertCon = document.getElementById('alert-con')
-    let alertContent = document.getElementById('alert-content')
-
-    alertCon.classList.add("active-content")
-    alertContent.style.display = "block"
-}
-
-let btncancle = document.getElementById('icon-cancle-alert')
-
-btncancle.onclick = () => {
-    let alertCon = document.getElementById('alert-con')
-    let alertContent = document.getElementById('alert-content')
-
-    alertCon.classList.remove('active-content')
-    alertContent.style.display = "none"
-}
+// เพิ่ม Event Listener ให้ฟอร์ม
+document.getElementById("user-form").addEventListener("submit", (event) => {
+  event.preventDefault(); // ป้องกันการรีเฟรชหน้า
+  saveUserData();
+});

@@ -1,20 +1,15 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f9f9f9;
-}
 
-.record-info {
+.container-record-detail {
   max-width: 800px;
   margin: 50px auto;
   background: white;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 150px;
 }
 
-#text-record-header {
+h1 {
   text-align: center;
   color: #333;
   margin-bottom: 25px;
@@ -22,30 +17,26 @@ body {
   padding-bottom: 15px;
 }
 
-#tabel-record {
-  width: 100%;
-  border-collapse: collapse;
-}
 
-#tabel-record td {
+
+.record {
   padding: 15px;
   border-bottom: 1px solid #333;
 }
 
-.btn-other {
-  text-align: right;
-}
-
-button {
+.record button {
   padding: 10px 15px;
   border: none;
   background-color: #28a745;
   color: white;
   border-radius: 4px;
   cursor: pointer;
+  margin-left: 600px;
+  bottom: 20px;
+  position: relative;
 }
 
-button:hover {
+.record button:hover {
   background-color: #218838;
 }
 
@@ -53,63 +44,39 @@ button:hover {
   background-color: #28a745;
   color: #28a745;
   padding: 20px;
+  position: absolute;
+  margin-bottom: 75%;
+  padding-left: 100%;
 }
 
-.add-data {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
+.form-detail-other {
+  display: none;
 }
 
-.btn-add-data {
-  color: black;
-  border: 2px solid green;
-  padding: 10px 30px;
-  border-radius: 20px;
-}
-
-.form-other {
-height: 0px;
-}
-
-.form-other h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.row-other {
+.row-detail {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   margin-bottom: 15px;
 }
 
-.field-other {
+.field-detail  {
   flex: 1;
   min-width: 150px;
   display: flex;
   flex-direction: column;
   padding-top: 10px;
-}
-
-.field-other {
   margin-bottom: 5px;
   font-size: 14px;
   color: #333;
 }
 
-.header-icons {
-  margin-left: 15px;
-  cursor: pointer;
-}
-
-.fixtextlabel-other {
+.fixtextlabel {
   padding-top: 8px;
   color: #797979;
 }
 
-.blockbg {
+.blockbg{
   background-color: #e6e6e6;
   border-radius: 10px;
   padding: 10px;
