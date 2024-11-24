@@ -41,4 +41,17 @@
     margin-top: 30px;
 }
 
+.btn-search {
+    padding: 10px 50px;
+    border: 2px green solid;
+    background: none;
+    border-radius: 10px;
+    transition: all ease-in-out 0.5s ;
+}
+
+.btn-search:hover {
+    background: green;
+    color: white;
+}
+
 

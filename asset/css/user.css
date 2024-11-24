@@ -115,3 +115,67 @@ main {
 .carousel-inner{
    height: 50rem;
 }
+
+.bottom-item-bottom-box {
+   width: 15rem;
+   height: auto;
+   display: grid;
+   grid-template-rows: 9rem 9rem;
+   border-radius: 15px;
+   box-shadow: 0 0 15px 5px #DEE7FB;
+   margin: 2rem 0;
+}
+
+.bottom-item-bottom-box div img {
+   width: 18rem;
+   height: 9rem;
+   object-fit: cover;
+}
+
+.bottom-item-bottom-box img {
+   width: 100%;
+   height: 100%;
+   background-color: #f3f6fc;
+   border-radius: 5px;
+}
+
+.bottom-item-bottom-box .text {
+   justify-items: center;
+   align-content: center;
+   color: #333;
+   padding: 15px;
+}
+
+.left-contact {
+   width: 50%;
+}
+
+.right-contact {
+   width: 50%;
+   border-left: 2px solid #404b61  ;
+   padding-left: 30px;
+}
+
+.btn-contact {
+   padding: 10px 50px;
+   border: none;
+   background: #002d73;
+   color: white;
+   border-radius: 10px;
+   box-shadow: 0 0 15px 0 #DEE7FB;
+   margin-right: 20px;
+}
+
+.contact-main {
+   background: linear-gradient(to bottom right,#DEE7FB, #f3f6fc, #ccc) ;
+   height: 200px;
+   display: flex;
+   align-items: center;
+}
+
+.icon-btn-contact {
+   border: none;
+   background: none;
+   margin-right: 30px;
+   font-size: 30px;
+}

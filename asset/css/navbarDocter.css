@@ -1,12 +1,12 @@
-.nav-list a {
+.nav-list ul a{
     color: black;
+    list-style: none;
+    text-decoration: none;
 }
-
 .nav-doc-body {
     position: relative;
+    height: 100px;
 }
-
-
 .drop {
     display: none;
     position: absolute;
@@ -30,4 +30,8 @@
     color: white;
     transform: scale(1.1);
     box-shadow: 0 0 15px 0 gray;
+}
+
+.right-side p {
+    color: black;
 }
