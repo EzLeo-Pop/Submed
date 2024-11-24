@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    min-height: 100vh;
+}
+
+.header {
+    /* position: fixed; */
+    top: 20px;
+    left: 0;
+    width: 100%;
+    padding: 50px 100px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10%;
+}
+
+.logo {
+    font-size: 32px;
+    color:darkslateblue;
+    text-decoration: none;
+    font-weight: 700;  
+}
+
+.navbar a{
+    position: relative;
+    font-size: 22px;
+    color: darkslateblue;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: darkslateblue;
+    transition: .3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.head {
+    font-size: 32px;
+    color: darkslateblue;
+    justify-content: center;
+    display: flex;
+    margin-top: 100px;
+}
+
+.underline-head{
+    display: flex;
+    width: 185px;
+    height: 4px;
+    border: none;
+    background: linear-gradient(to left, blue , red , crimson);
+    text-align: center;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex; /* เปลี่ยนจาก grid เป็น flex */
+    gap: 20px; /* ระยะห่างระหว่างการ์ด */
+    max-width: 100%; /* ป้องกันไม่ให้การ์ดเกินขอบจอ */
+    margin: 10px auto; /* จัดให้อยู่กลางหน้าจอ */
+    justify-content: center; /* จัดเรียงให้อยู่กลาง */
+}
+
+  
+/* การจัดการ card */
+.card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    transition: transform 0.2s, box-shadow 0.2s; /* เพิ่มเอฟเฟกต์ hover */
+    max-width: 20%;
+    height: 170px;
+    overflow: hidden;
+}
+  
+.card:hover {
+    transform: translateY(-5px); /* ยกขึ้นเล็กน้อย */
+    box-shadow: 0 6px 12px #e7edff;
+}
+  
+/* การจัดการ icon */
+.card-icon img {
+    width: 50px; /* ขนาดไอคอน */
+    height: 50px;
+    margin-bottom: 15px;
+    
+}
+  
+/* การจัดการข้อความในกรอบ */
+.card-content h3 {
+    font-size: 18px;
+    color: darkslateblue;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+  
+.card-content p {
+    font-size: 14px;
+    color: #666666;
+    line-height: 1.5;
+    overflow: hidden; /* ซ่อนข้อความที่ล้น */
+    text-overflow: ellipsis; /* เพิ่ม ... เมื่อข้อความยาวเกิน */
+    white-space: nowrap; /* ทำให้ข้อความแสดงในบรรทัดเดียว */
+    
+}
+  

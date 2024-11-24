@@ -1,3 +1,33 @@
 .nav-list a {
     color: black;
 }
+
+.nav-doc-body {
+    position: relative;
+}
+
+
+.drop {
+    display: none;
+    position: absolute;
+    top: 70%;
+    right: 4rem;
+    box-shadow: 0 0 15px 0 gray;
+    padding: 20px 30px;
+    border-radius: 5px;
+}
+
+.drop button {
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 2px solid red;
+    background: none;
+    transition: all ease-in-out 0.5s ;
+}
+
+.drop button:hover {
+    background: red;
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px 0 gray;
+}

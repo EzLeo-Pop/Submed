@@ -4,7 +4,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(banner.png);
+    background-image: url(/asset/img/banner.png);
 }
 
 .item-doc {

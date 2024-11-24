@@ -1,12 +1,11 @@
 
-.container-record-detail {
+#result-container {
   max-width: 800px;
   margin: 50px auto;
   background: white;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin-top: 150px;
 }
 
 h1 {
@@ -31,7 +30,6 @@ h1 {
   color: white;
   border-radius: 4px;
   cursor: pointer;
-  margin-left: 600px;
   bottom: 20px;
   position: relative;
 }
@@ -51,6 +49,7 @@ h1 {
 
 .form-detail-other {
   display: none;
+  margin-top: 10px;
 }
 
 .row-detail {
@@ -82,3 +81,11 @@ h1 {
   padding: 10px;
   margin-top: 10px;
 }
+
+.btn-other-detail-content {
+  display: flex;  
+  justify-content: end;
+  gap: 10px;
+  width: 100%;
+}
+

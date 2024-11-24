@@ -24,7 +24,8 @@ const saveUserData = () => {
   sessionStorage.setItem("userData", JSON.stringify(userData));
 
   // แสดงข้อความยืนยันและรีเซ็ตฟอร์ม
-  alert("บันทึกข้อมูลเรียบร้อยแล้ว!");
+  document.getElementById("alert-con").classList.add("active-content")
+  document.getElementById("alert-content").style.display = "block"
   document.getElementById("user-form").reset();
 };
 
@@ -33,3 +34,10 @@ document.getElementById("user-form").addEventListener("submit", (event) => {
   event.preventDefault(); // ป้องกันการรีเฟรชหน้า
   saveUserData();
 });
+
+let cancleBtn = document.getElementById('icon-cancle-alert')
+
+cancleBtn.onclick = ()=> {
+  document.getElementById("alert-con").classList.remove("active-content")
+  document.getElementById("alert-content").style.display = "none"
+}

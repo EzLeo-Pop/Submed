@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: "Kanit", sans-serif;
+}
+
+body {
+   justify-content: center;
+   align-items: center;
+   background-color: #eee;
+}
+
+.img-banner-info {
+   background-color: #f3f6fc;
+   width: 100%;
+   height: 400px;
+   justify-items: center;
+   align-content: center;
+}
+
+
+.banner-img {
+   position: relative;
+   width: 530px;
+   height: 270px;
+}
+
+main {
+   background: linear-gradient(to bottom right,#DEE7FB, #f3f6fc, #ccc);
+}
+
+.main-con {
+   position: relative;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   align-content: center;
+   height: 300px;
+}
+
+.main-left {
+   justify-items: center;
+   align-content: center;
+   color: #002d73;
+}
+
+.main-left h3 {
+   font-weight: 400;
+   font-size: 30px;
+   margin-bottom: 1rem;
+}
+
+.item-link {
+   display: inline-flex;
+}
+
+.main-left a {
+   text-decoration: none;
+   font-size: 15px;
+   color: #007bff;
+}
+
+.main-left i {
+   font-size: 25px;
+   color: #007bff;
+}
+
+.item-link:hover i {
+   transform: translateX(20%);
+}
+
+.main-right {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.main-right a {
+   background-color: transparent;
+   border: 2px solid #fbfbfc;
+   border-radius: 10px;
+   width: 7rem;
+   height: 5rem;
+   margin-right: 2rem;
+   margin-bottom: 2rem;
+   box-shadow: 0 0 1px rgb(0, 0, 0, .2);
+   justify-items: center;
+   align-content: center;
+   text-decoration: none;
+   transition: all ease-in-out 0.5s;
+}
+
+.main-right i {
+   color: #002d73;
+   font-size: 30px;
+}
+
+.main-right p {
+   color: #333;
+   font-size: small;
+}
+
+.main-right a:hover {
+   background-color: #fbfbfc;
+   box-shadow: 0 0 10px rgb(0, 0, 0, .2);
+   transform: translateY(-5%);
+}
+
+.img-silder {
+   width: 100vw;
+   height: 100vh;
+}
+
+.carousel-inner{
+   height: 50rem;
+}

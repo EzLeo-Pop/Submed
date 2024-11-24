@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head id="index-link">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav id="navbarDoctor"></nav>
+
+    <div class="container">
+        <div class="from-table-time" id="from-table-time">
+            <form class="form-table-deatil">
+                <div class="input-username input-content">
+                    <button type="button" id="cancle-btn-time"><i class="fa-solid fa-x"></i></button>
+                    <div class="input-time-detail">
+                        <p>ชื่อ</p>
+                        <input type="text" id="username-time" required>
+                    </div>
+                    <div class="input-time-detail">
+                        <p>นามสกุล</p>
+                        <input type="text" id="surname-time" required>
+                    </div>
+                </div>
+                <div class="input-department input-content">
+                    <div class="input-time-detail">
+                        <p>แผนก</p>
+                        <input type="text" id="department-time" required>
+                    </div>
+                    <div class="input-time-detail">
+                        <p>เเพทย์ผู้นัดหมาย</p>
+                        <input type="text" id="doctername-time" required>
+                    </div>
+                </div>
+                <div class="input-time">
+                    <div class="input-time-detail">
+                        <p>วันที่นัดหมาย</p>
+                        <input type="date" id="date-time-before" required>
+                    </div>
+                    <div class="input-time-detail ">
+                        <p>เวลา</p>
+                        <input type="time" id="date-time-after" required>
+                    </div>
+                </div>
+                <div class="btn-time-table">
+                    <button type="button" id="add-detail-from">เพิ่มเวลานัดหมาย</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="btn-add-timetable">
+            <button type="button" id="btn-add-timetable">เพิ่มตารางนัดหมาย</button>
+        </div>
+
+        <div class="body">
+            <table id="appointmentTable">
+                <thead>
+                    <tr>
+                        <th>ลำดับ</th>
+                        <th>ชื่อ-นามสกุล</th>
+                        <th>แผนก</th>
+                        <th>เเพทย์ผู้นัดหมาย</th>
+                        <th>วันที่นัดหมาย</th>
+                        <th>เวลา</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+
+
+</body>
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+<!-- ! Font owlcarosel -->
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+<!-- ! booststarp-->
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+<!-- ! script -->
+<script src="src/js/index.js"></script>
+<script src="src/js/nav.js"></script>
+<script src="src/js/tabledoc.js"></script>
+
+</html>

@@ -8,20 +8,24 @@
                 <div class="nav-list">
                     <ul class="d-flex gap-3">
                         <a href="mainDoctor.html">หน้าหลัก</a>
-                        <a href="#"><li>ค้นหาข้อมูลผู้ป่วย</li></a>
+                        <a href="search.html"><li>ค้นหาข้อมูลผู้ป่วย</li></a>
                         <a href="fromhistory.html"><li>เพิ่มข้อมูลผู้ป่วย</li></a>
-                        <a href="#"><li>ตารางเวลานัด</li></a>
+                        <a href="tabledoc.html"><li>ตารางเวลานัด</li></a>
                     </ul>
                 </div>
             </div>
 
             <div class="right-side d-flex">
                 <div class="username-show me-5">
-                    <p>นพ.นริน เทพจุติ <i class="fa-solid fa-angle-down"></i></p>
+                    <p>นพ.นริน เทพจุติ <button type="button"  style="border: none; background: none;" id="dropdown-logout" onclick="dropdown()"><i class="fa-solid fa-angle-down"></i></p></button>
                 </div>
                 <div class="user-profile">
                     <i class="fa-solid fa-user"></i>
                 </div>
+            </div>
+
+            <div class="drop" id="drop">
+                <a href="DocterLogin.html"><button>Logout</button></a>
             </div>
 
         </div>

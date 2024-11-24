@@ -1,13 +1,4 @@
-// const searchUser = () => {
-//     const searchName = document.getElementById("name-check").value;
-//     if (!searchName) {
-//         alert("กรุณากรอกชื่อก่อนค้นหา!");
-//         return;
-//     }
 
-//     // เปิดหน้า page2.html พร้อมส่ง Query String
-//     window.location.href = `record.html?name=${encodeURIComponent(searchName)}`;
-// };
 // ฟังก์ชันค้นหาข้อมูล
 const searchUser = () => {
     const searchName = document.getElementById("search").value.trim();

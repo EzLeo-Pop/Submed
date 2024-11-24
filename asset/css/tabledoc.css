@@ -1,0 +1,145 @@
+.from-table-time {
+  width: 500px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 0 15px 0 gray;
+  border-radius: 20px;
+  background-color: white;
+  display: none;
+}
+
+.form-table-deatil {
+  padding: 30px 30px;
+}
+
+.input-time-detail {
+  margin-top: 10px;
+}
+
+.input-content {
+  display: flex;
+}
+
+.input-time-detail input {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  border-bottom: 2px black solid;
+  background: none;
+  outline: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.input-time-detail input:focus {
+  border-bottom: 2px rgb(2, 221, 2) solid;
+}
+
+.input-time {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-time-table {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn-time-table button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: green 2px solid;
+  background: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-time-table button:hover {
+  background-color: green;
+  color: white;
+}
+
+.from-table-time {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.btn-time-table-cancle {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.btn-time-table-cancle button {
+  padding: 5px 10px;
+  border: red solid 2px;
+  border-radius: 10px;
+  background: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-time-table-cancle button:hover {
+  background: red;
+}
+
+.body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  min-height: 100vh;
+  background-color: #f8f8f8;
+}
+table {
+  border-collapse: collapse;
+  width: 90%;
+  max-width: 1500px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 40px;
+  text-align: center;
+}
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+td:nth-child(1) {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+.note {
+  color: red;
+  font-size: 0.9em;
+}
+.highlight {
+  font-weight: bold;
+  color: #4CAF50;
+}
+
+.btn-add-timetable {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.btn-add-timetable button {
+  padding: 15px 40px;
+  border-radius: 20px;
+  background: none;
+  border: 2px solid green;
+}
+
+#cancle-btn-time {
+  position: absolute;
+  right: 30px;
+  border: none;
+  background: none;
+}

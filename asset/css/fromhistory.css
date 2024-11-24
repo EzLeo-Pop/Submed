@@ -60,10 +60,6 @@ form h2 {
   cursor: pointer;
 }
 
-h2 {
-  padding-bottom: 10px;
-  border-bottom: #dadada solid;
-}
 
 .avatar {
   width: 14px;
@@ -99,11 +95,10 @@ h2 {
 
 .alert-con {
   width: 0vw;
-  height: 120vh;
   background-color: #3333335d;
   position: absolute;
-  z-index: 1;
-  top: 70%;
+  z-index: 2;
+  top: 0;
   left: 50%;
   transform: translate(-50%,-50%);
   transition: all ease-in-out 0.5s;
@@ -112,18 +107,20 @@ h2 {
 
 .active-content {
   width: 100vw;
+  top: 70%;
 }
 
 .alert-content {
   position: absolute;
   top: 55%;
   left: 50%;
+  padding: 100px;
   transform: translate(-50%,-50%);
   background-color: white;
-  padding: 100px;
   border-radius: 20px;
   font-size: 20px;
   display: none;
+  box-shadow: 0 0 15px 0 rgba(78, 78, 78, 0.651);
 }
 .icon-cancle-alert {
   position: absolute;
